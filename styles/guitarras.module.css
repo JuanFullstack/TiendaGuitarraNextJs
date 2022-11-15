@@ -1,0 +1,149 @@
+.guitarrasgrid {
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width:768px) {
+    .guitarrasgrid {
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+
+@media (min-width:992px) {
+    .guitarrasgrid {
+        grid-template-columns: repeat(3,1fr)
+    }
+}
+
+
+
+.guitarra {
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+ 
+}
+
+.volver {
+
+text-decoration: none;
+}
+
+.ordenar {
+
+  margin-left: 30rem;
+  background-color: #13DFFF;
+  text-align: center;
+  border: 0.2rem solid #0796AC;
+  border-radius: 1rem;
+}
+
+.guitarra .contenido {
+
+    padding: 1rem;
+
+}
+
+.guitarra .contenido h3{
+
+   font-size: 3rem;
+   text-transform: uppercase;
+  color:#e99401;
+}
+
+.guitarra .descripcion {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem;
+ }
+ 
+ .guitarra .precio {
+
+    color:#e99401;
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 900;
+ }
+
+ .guitarra .enlaces {
+ margin-top: 2rem;
+ display: block;
+ background-color: black;
+ color: white;
+ text-decoration: none;
+ padding: .5rem;
+ text-align: center;
+ text-transform: uppercase;
+ transition-property: background-color;
+ transition-duration: 300ms;
+}
+
+ .guitarra .enlaces:hover { 
+
+    background-color: #e99401;
+
+ }
+
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario label  {
+
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.formulario select  {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.formulario input[type="submit"]  {
+
+    margin-top: 3rem;
+    background-color: black;
+    color: white;
+    padding: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-property: font-size;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+.formulario input[type="submit"]:hover {
+    
+    cursor: pointer;
+    background-color: #e99401;
+    font-size: 3rem ;
+}
+
+.error1 {
+
+    text-align: center;
+    font-size: 4rem;
+}
+
+.error2 {
+
+   font-weight: 700;
+}
